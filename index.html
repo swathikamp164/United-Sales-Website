@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Sales Agencies | Customer Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">UNITED <span>SALES AGENCIES</span></div>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    <nav id="navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">CUSTOMER CARE • SALES SUPPORT</p>
+        <h1>Helpful Service.<br><span>Stronger Relationships.</span></h1>
+        <p>Welcome to United Sales Agencies. We are here to help customers with product information, enquiries and sales assistance.</p>
+        <a class="btn" href="#contact">Send an Enquiry</a>
+        <a class="btn secondary" href="#services">Our Services</a>
+    </div>
+    <div class="hero-card">
+        <div class="circle">♡</div>
+        <h2>We are here to help!</h2>
+        <p>Customer enquiries</p>
+        <p>Product information</p>
+        <p>Sales assistance</p>
+    </div>
+</section>
+
+<section class="about section" id="about">
+    <p class="tagline">ABOUT US</p>
+    <h2>Customer Service Built on Trust</h2>
+    <p>United Sales Agencies aims to provide helpful information and courteous assistance to customers. Good customer service means listening carefully, understanding customer needs and communicating information clearly.</p>
+    <p>This website is a student minor project based on customer service activities related to the internship. It demonstrates how a website can organise service information and provide a simple enquiry interface.</p>
+</section>
+
+<section class="section services" id="services">
+    <p class="tagline">WHAT WE DO</p>
+    <h2>Our Customer Support Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon">⌕</div>
+            <h3>Product Information</h3>
+            <p>Get information about products, features and availability by contacting the agency.</p>
+            <a href="#contact">Ask a Question →</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">☎</div>
+            <h3>Customer Enquiries</h3>
+            <p>Share your questions and receive guidance about your customer service needs.</p>
+            <a href="#contact">Send an Enquiry →</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">▤</div>
+            <h3>Sales Assistance</h3>
+            <p>Get assistance with product enquiries and sales-related requests.</p>
+            <a href="#contact">Get Assistance →</a>
+        </div>
+    </div>
+</section>
+
+<section class="section process">
+    <p class="tagline">OUR APPROACH</p>
+    <h2>How Customer Enquiries Work</h2>
+    <div class="steps">
+        <div><b>01</b><h3>Submit</h3><p>The customer shares a question or request.</p></div>
+        <div><b>02</b><h3>Understand</h3><p>The enquiry is reviewed to understand the customer's needs.</p></div>
+        <div><b>03</b><h3>Respond</h3><p>Clear information or guidance is provided to the customer.</p></div>
+    </div>
+</section>
+
+<section class="section faq" id="faq">
+    <p class="tagline">QUICK ANSWERS</p>
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+        <summary>How can I ask about a product?</summary>
+        <p>Use the enquiry form on this website and mention the product and information you need.</p>
+    </details>
+
+    <details>
+        <summary>Can I enquire about product availability?</summary>
+        <p>Yes. Submit an enquiry with the product details. The agency should confirm availability directly.</p>
+    </details>
+
+    <details>
+        <summary>What information should I provide?</summary>
+        <p>Include your name, contact details, enquiry type and a short description of your question.</p>
+    </details>
+
+    <details>
+        <summary>Can I place an order through this website?</summary>
+        <p>No. This is an academic demonstration website. It does not process actual orders or payments.</p>
+    </details>
+</section>
+
+<section class="section contact" id="contact">
+    <div class="contact-info">
+        <p class="tagline">CONTACT US</p>
+        <h2>How Can We Help You?</h2>
+        <p>Send your question using the enquiry form. Please provide clear information so your request can be understood.</p>
+        <h3>United Sales Agencies</h3>
+        <p>Keezh oor, Iritty, Kannur District, Kerala</p>
+        <p>Customer enquiries • Product information • Sales assistance</p>
+    </div>
+
+    <form id="enquiryForm">
+        <h2>Send an Enquiry</h2>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="type">Enquiry Type</label>
+        <select id="type" required>
+            <option value="">Select an option</option>
+            <option>Product Information</option>
+            <option>Product Availability</option>
+            <option>Sales Assistance</option>
+            <option>Other</option>
+        </select>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="4" placeholder="Write your enquiry here" required></textarea>
+
+        <button type="submit" class="btn">Submit Enquiry</button>
+        <p id="response" aria-live="polite">Demo form: information is not sent or stored.</p>
+    </form>
+</section>
+
+<footer>
+    <h3>UNITED SALES AGENCIES</h3>
+    <p>Customer Service Internship Project | BCA III Semester</p>
+    <p>© <span id="year"></span> Student Demonstration Website</p>
+    <a href="#home">Back to Top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
